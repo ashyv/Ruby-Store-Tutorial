@@ -3,8 +3,8 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     </head>
-    <body>
-        <div ng-controller="StoreController as store"> <!-- store is an alias -->
+    <body ng-controller="StoreController as store"> <!-- store is an alias -->
+        <div ng-hide="store.product.soldOut"> <!-- Hide product if soldOut is true -->
             <h1> {{store.product.name}} </h1> 
             <h2> ${{store.product.price}} </h2>
             <p> {{store.product.description}} </p> 
